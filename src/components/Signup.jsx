@@ -61,7 +61,7 @@ const Signup = () => {
       <Input
         type="password"
         label="Password: "
-        placeholder=""
+        placeholder="******"
         {...register("password", {
           required: true,
         })}
@@ -79,10 +79,7 @@ const Signup = () => {
 
       <p className="text-center text-muted-foreground text-sm">
         Already have an account?{" "}
-        <Link
-          to="/login"
-          className="text-black dark:text-white hover:underline"
-        >
+        <Link to="/login" className="text-black hover:underline">
           Login
         </Link>
       </p>
